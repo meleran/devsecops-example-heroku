@@ -47,4 +47,6 @@ workflows:
   sast-deploy-dast:
     jobs:
       # Deploy to Heroku
+      - python-safty
       - heroku/deploy-via-git
+      
